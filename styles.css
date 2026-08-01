@@ -27,9 +27,10 @@
 }
 
 *,*::before,*::after{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
 body{
   margin:0;
+  overflow-x:hidden;
   background:var(--creme);
   color:var(--encre);
   font-family:var(--font-texte);
@@ -175,9 +176,20 @@ section{position:relative;}
   .call-link span{display:none;}
   .nav-toggle{display:flex;}
 }
+@media (max-width:600px){
+  .btn-header{display:none;}
+  .site-header .container{gap:var(--space-2);}
+  .header-actions{gap:10px;}
+}
 @media (max-width:520px){
   .brand-name{font-size:1.05rem;}
-  .btn-header{padding:11px 16px;font-size:.85rem;}
+}
+@media (max-width:480px){
+  :root{--space-3:16px;}
+}
+@media (max-width:360px){
+  .social-link svg{width:26px;height:26px;}
+  .brand-name{font-size:.95rem;}
 }
 
 /* ---------- Hero ---------- */
@@ -370,9 +382,13 @@ section{position:relative;}
 .pricing-group .pricing-desc{font-size:.92rem;color:var(--encre-60);margin-bottom:var(--space-3);}
 @media (max-width:760px){.pricing-grid{grid-template-columns:1fr;}}
 .pricing-actions{display:flex;gap:var(--space-2);flex-wrap:wrap;margin-top:var(--space-4);}
+@media (max-width:600px){
+  .pricing-actions{flex-direction:column;}
+  .pricing-actions .btn{width:100%;}
+}
 
 .price-table{width:100%;border-collapse:collapse;margin-top:var(--space-2);}
-.price-table td{padding:14px 0;border-bottom:1px solid var(--sable);}
+.price-table td{padding:14px 0;border-bottom:1px solid var(--sable);vertical-align:top;}
 .price-table td:last-child{text-align:right;font-family:var(--font-titre);font-size:1.2rem;color:var(--argile-fonce);white-space:nowrap;padding-left:var(--space-2);}
 
 /* Esthétique / acu-lifting, bloc texte + motif enso */
