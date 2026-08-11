@@ -270,8 +270,10 @@ section{position:relative;}
 @media (max-width:760px){.teaser-grid{grid-template-columns:1fr;}}
 
 /* Avis clients */
-.rating-line{display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:var(--space-4);}
-.rating-stars{display:flex;gap:3px;color:var(--argile);}
+.rating-line{display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:var(--space-5);}
+.rating-title{font-family:var(--font-titre);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:600;color:var(--olive-fonce);}
+.rating-stars{display:flex;gap:4px;color:var(--argile);}
+.rating-score{font-size:.95rem;font-weight:600;letter-spacing:.04em;color:var(--encre-60);}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3);}
 .testi-card{
   background:var(--creme);border:1px solid var(--sable);padding:var(--space-3);
