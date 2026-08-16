@@ -396,6 +396,17 @@ section{position:relative;}
 .price-table td{padding:14px 0;border-bottom:1px solid var(--sable);vertical-align:top;}
 .price-table td:last-child{text-align:right;font-family:var(--font-titre);font-size:1.2rem;color:var(--argile-fonce);white-space:nowrap;padding-left:var(--space-2);}
 
+/* Pages légales (mentions légales, confidentialité) */
+.legal-content{max-width:760px;}
+.legal-content h2{font-size:1.5rem;margin-top:var(--space-5);}
+.legal-content h2:first-of-type{margin-top:0;}
+.legal-content h3{font-size:1.1rem;margin-top:var(--space-3);}
+.legal-content p{color:var(--encre-60);}
+.legal-content ul{margin:0 0 var(--space-2);padding-left:1.2em;color:var(--encre-60);}
+.legal-content li{margin-bottom:6px;}
+.legal-content strong{color:var(--encre);}
+.legal-content a{color:var(--argile-fonce);text-decoration:underline;}
+
 /* Esthétique / acu-lifting, bloc texte + motif enso */
 .esthetique-block{
   background:var(--creme-2);border:1px solid var(--sable);
